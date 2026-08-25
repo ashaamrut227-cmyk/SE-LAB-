@@ -1,4 +1,4 @@
-1. Requirements Table
+Functional Requirements
 | ID         | Requirement                        | Description                                                                                                                                          | Priority | Acceptance Criteria                                                                                                                                              | Rationale                                                          |
 | ---------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | **FR-001** | Pallet Placement Validation        | The system shall validate the proposed 3D pallet coordinates against the rack's maximum load capacity before confirming storage.                     | High     | **Pass:** Pallet is assigned when rack capacity is sufficient. **Fail:** Storage is rejected when total rack weight exceeds the rated limit.                     | Prevents structural overload and unsafe pallet storage.            |
@@ -6,6 +6,7 @@
 | **FR-003** | Inventory Location Tracking        | The system shall record and retrieve the current 3D shelf coordinates of every stored pallet.                                                        | High     | **Pass:** Searching for an SKU returns its correct rack, shelf, and position. **Fail:** System reports when the pallet cannot be located.                        | Enables warehouse operators to quickly locate inventory.           |
 | **FR-004** | Stock Movement Logging             | The system shall automatically record every pallet movement, including pallet ID, source location, destination location, timestamp, and operator ID. | Medium   | **Pass:** Movement creates a complete log entry. **Fail:** Movement cannot be completed if required logging information is unavailable.                          | Provides traceability and accountability for inventory movements.  |
 | **FR-005** | Inventory Monitoring and Reporting | The system shall allow the Logistics Supervisor to view inventory status, pallet locations, rack capacity, and stock movement history.               | Medium   | **Pass:** Supervisor can generate/view the requested inventory information. **Fail:** System displays an appropriate message when requested data is unavailable. | Helps supervisors monitor warehouse operations and make decisions. |
+
 
 Non-Functional Requirements
 
