@@ -61,8 +61,8 @@ The system contains exactly **5 Functional Requirements**.
 | FR-001 | Validate pallet placement against rack maximum load capacity. | High     |
 | FR-002 | Scan and identify pallets using barcode/RFID.                 | High     |
 | FR-003 | Track and retrieve the current 3D location of stored pallets. | High     |
-| FR-004 | Record every pallet movement with relevant movement details.  | Medium   |
-| FR-005 | Provide inventory monitoring and reporting facilities.        | Medium   |
+| FR-004 | Record every pallet movement with relevant movement details.  | High  |
+| FR-005 | Provide inventory monitoring and reporting facilities.        | High   |
 
 Detailed requirements are available in:
 
@@ -170,14 +170,11 @@ warehouse-inventory-pallet-tracker/
 │
 ├── README.md
 │
-├── requirements/
-│   └── requirements-table.md
+└── requirements-table.md
 │
-├── uml/
-│   └── use-case-diagram.png
+└── use-case-diagram.png
 │
-└── use-case-flow/
-    └── store-assign-pallet.md
+└── store-assign-pallet.md
 ```
 
 ---
